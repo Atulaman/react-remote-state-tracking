@@ -1,0 +1,5 @@
+/node_modules
+/ACR/.terraform
+/ACR/.terraform.lock.hcl
+/ACR/*.tfstate
+/ACR/*.tfstate.backup
