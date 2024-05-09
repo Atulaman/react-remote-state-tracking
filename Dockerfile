@@ -11,5 +11,5 @@ FROM node:alpine
 WORKDIR /myapp
 COPY --from=build /app/build /myapp
 RUN npm install -g http-server
-EXPOSE 8080
-CMD ["http-server", "-p", "8080", "-d", "false"]
+EXPOSE 80
+CMD ["http-server", "-p", "80", "-d", "false"]

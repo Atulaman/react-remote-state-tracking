@@ -1,0 +1,9 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "azurerm_container_group.example" [label="azurerm_container_group.example"];
+  "azurerm_container_registry.myregistry" [label="azurerm_container_registry.myregistry"];
+  "azurerm_resource_group.react" [label="azurerm_resource_group.react"];
+  "azurerm_container_group.example" -> "azurerm_container_registry.myregistry";
+  "azurerm_container_registry.myregistry" -> "azurerm_resource_group.react";
+}
